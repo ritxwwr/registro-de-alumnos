@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Alumnos</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header{
+            background-color: #d9534f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav{
+            background-color: #ffffff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a{
+            text-decoration: none;
+            margin-right: 15px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .container{
+            padding: 20px;
+        }
+
+        h2{
+            margin-bottom: 10px;
+        }
+
+        .btn-agregar{
+            background-color: #007bff;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .btn-agregar:hover{
+            background-color: #0056b3;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td{
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th{
+            background-color: #f2f2f2;
+        }
+
+        .btn-editar{
+            background-color: #ffc107;
+            border: none;
+            padding: 5px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-eliminar{
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .acciones button{
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Registro de Alumnos</h1>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Nuevo Alumno</a>
+    <a href="#">Configuración</a>
+</nav>
+
+<div class="container">
+    <h2>Listado de Alumnos</h2>
+
+    <button class="btn-agregar">Agregar Alumno</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Estudiante</th>
+                <th>Carrera</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Axel cruz</td>
+                <td>ADMINISTRACION</td>
+                <td class="acciones">
+                    <button class="btn-editar">✏️</button>
+                    <button class="btn-eliminar">🗑️</button>
+                </td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Liz garcia</td>
+                <td>ANIMACION DIGITAL</td>
+                <td class="acciones">
+                    <button class="btn-editar">✏️</button>
+                    <button class="btn-eliminar">🗑️</button>
+                </td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>lyan flores</td>
+                <td>CONTABILIDAD</td>
+                <td class="acciones">
+                    <button class="btn-editar">✏️</button>
+                    <button class="btn-eliminar">🗑️</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
